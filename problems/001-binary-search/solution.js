@@ -94,7 +94,7 @@ function binarySearch(nums, target) {
     if (nums[mid] === target) {
       return mid
     } else if (nums[mid] > target) {
-      right = mid
+      right = mid // 当前索引mid所在位置已经视为无效，则right占据有效区间右侧第一个无效位
     } else if (nums[mid] < target) {
       left = mid + 1
     }
