@@ -37,8 +37,6 @@
 
 'use strict'
 
-const { get } = require('http')
-
 const rl = require('readline').createInterface({
   input: process.stdin
 })
